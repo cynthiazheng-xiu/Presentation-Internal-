@@ -23,7 +23,28 @@ with tabs[1]:
     3. 生成分类标签+建议话术+回复草稿
     **效果**：人工25分钟 → AI辅助2分钟
     """)
+# ===== 第三部分：Coze工作流展示 =====
+st.markdown("---")
+st.subheader("⚙️ Coze 工作流演示")
 
+# 简单的文字说明（确保这部分能显示）
+st.markdown("""
+<div style="background-color: #f0f7fa; padding: 20px; border-radius: 10px;">
+    <h4 style="color: #1e5f7a;">🤖 Coze 询盘分类工作流</h4>
+    <p><strong>功能</strong>：自动分类客户询盘，生成回复建议</p>
+    <p><strong>效果</strong>：人工25分钟 → AI辅助2分钟</p>
+    <p><strong>链接</strong>：<a href="https://www.coze.cn/work_flow?space_id=7491136436608106536&workflow_id=7610438014247305225&force_stay=1" target="_blank">点击查看工作流（需登录）</a></p>
+</div>
+""", unsafe_allow_html=True)
+
+# ===== 第四部分：工作流价值总结 =====
+st.markdown("---")
+st.markdown("""
+<div style="background-color: #e6f0f5; padding: 20px; border-radius: 10px;">
+    <h4 style="color: #1e5f7a;">✨ Coze工作流价值</h4>
+    <p>作为“AI大脑”的核心，Coze工作流实现：自动化询盘分类、智能回复生成、知识库积累、0成本部署。</p>
+</div>
+""", unsafe_allow_html=True)
 with tabs[2]:
     st.header("报价系统——双方案并行")
     st.markdown("""
