@@ -1,10 +1,9 @@
 import streamlit as st
-from PIL import Image
 import pandas as pd
 
 # 页面配置
 st.set_page_config(
-    page_title="极速出海 | AI赋能的报价履约协同助手-郑秀英| 郑秀英",
+    page_title="极速出海 | AI赋能的报价履约协同助手",
     page_icon="🚢",
     layout="wide"
 )
@@ -45,24 +44,31 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# 头部
-st.markdown('<div class="main-header">🚢 极速出海</div>', unsafe_allow_html=True)
+# ===== 头部 =====
+st.markdown('<div class="main-header">📦 极速出海</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-header">AI赋能的报价履约协同助手</div>', unsafe_allow_html=True)
 
 # 口号
 st.markdown('<div class="slogan">快速 · 精准 · 协同</div>', unsafe_allow_html=True)
 
-# 项目简介
+# 汇报人
+st.markdown(""" 
+<div style="text-align: center; margin-top: -10px; margin-bottom: 20px; color: #666; font-size: 1.1rem;">
+    汇报人：郑秀英
+</div>
+""", unsafe_allow_html=True)
+
+# ===== 项目简介 =====
 with st.container():
     col1, col2 = st.columns([2, 1])
     with col1:
-        st.markdown("### 🌟 项目简介")
+        st.markdown("### 📦 项目简介")
         st.markdown("""
         **极速出海** 是一个专为小微外贸企业设计的**AI+数字化报价履约协同助手**，针对三大核心痛点：
         
         - **报价慢**：40%企业报价半天以上 → 2分钟报价
         - **单证错**：26%单证错误率 → 3秒填单，错误率2%
-        - **获客难**：70%企业缺运营人才 → 24小时数字人直播
+        - **获客难**：70%企业缺运营人才 → 24小时数字人直播，成本200元/月
         """)
         
         st.markdown("### 🛠️ 核心技术模块")
@@ -99,6 +105,7 @@ st.markdown("""
 - **🛠️ 四大模块**：各模块功能演示
 - **🤝 产教融合**：团队与企业合作
 """)
+
 # ===== 指导教师风采：郑秀英 =====
 st.markdown("---")
 st.subheader("👩‍🏫 指导教师：郑秀英")
@@ -128,17 +135,17 @@ with col2:
 # ===== 指导教师成绩总结 =====
 st.info("""
 🏆 **指导教师战绩**：近三年累计获得**贵州省教育厅颁发的省级技能大赛奖项6项**，其中**一等奖2项，二等奖4项**。
-多次荣获学院“优秀教师”称号（2021、2022、2024）。
+多次荣获学院“优秀教师”称号（2021、2022、2024），累计指导学生获省级以上奖项20余项。
 """)
 
-# ===== 详细荣誉列表（按年份倒序排列）=====
+# ===== 详细荣誉列表 =====
 st.markdown("### 📋 历年获奖详情")
 
 honors = [
     "**2025** 中国国际大学生创新大赛贵州省省赛 **银奖**（指导老师）",
     "**2025** 贵州省职业院校技能大赛‘互联网+国际经济与贸易’赛项 **二等奖**（指导老师）",
     "**2024** 贵州省职业院校技能大赛‘互联网+国际经济与贸易’赛项 **二等奖**（指导老师）",
-    "**2023** 贵州省职业院校技能大赛‘互联网+国际贸易综合技能’赛项 **二等奖**（指导老师）",  # ✅ 放在2024前面
+    "**2023** 贵州省职业院校技能大赛‘互联网+国际贸易综合技能’赛项 **二等奖**（指导老师）",
     "**2023** 贵州省职业院校技能大赛高职组‘跨境电子商务’赛项 **一等奖**（指导老师）",
     "**2021** 贵州省职业院校技能大赛高职组‘英语口语’赛项 **一等奖**（指导老师）"
 ]
