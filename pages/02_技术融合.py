@@ -68,3 +68,43 @@ fig.update_layout(
 )
 
 st.plotly_chart(fig, use_container_width=True)
+# --- 嵌入可查看的 Coze 工作流 ---
+st.markdown("---")
+st.subheader("⚙️ Coze 工作流实时演示")
+
+# 您的 Coze 工作流链接
+coze_url = "https://www.coze.cn/work_flow?space_id=7491136436608106536&workflow_id=7610438014247305225&force_stay=1"
+
+# 创建选项卡，让用户选择查看方式
+view_option = st.radio(
+    "选择查看方式：",
+    ["🔗 点击链接查看", "🖼️ 嵌入页面查看（需登录）"],
+    horizontal=True
+)
+
+if view_option == "🔗 点击链接查看":
+    st.markdown(f"""
+    <div style="background-color: #f0f7fa; padding: 20px; border-radius: 10px; text-align: center;">
+        <h4 style="color: #1e5f7a;">🤖 Coze 询盘分类工作流</h4>
+        <p>点击下方按钮，在新标签页中打开工作流（可能需要登录 Coze 账号）。</p>
+        <a href="{coze_url}" target="_blank">
+            <button style="background-color: #1e5f7a; color: white; padding: 12px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold;">
+                🔗 打开 Coze 工作流
+            </button>
+        </a>
+    </div>
+    """, unsafe_allow_html=True)
+    
+else:
+    # 尝试用 iframe 嵌入
+    st.markdown(f"""
+    <div style="background-color: #f0f7fa; padding: 20px; border-radius: 10px;">
+        <h4 style="color: #1e5f7a;">🤖 Coze 工作流嵌入视图</h4>
+        <p style="color: #666; font-size: 0.9em;">ⓘ 如果页面显示需要登录，请先登录您的 Coze 账号。</p>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # 嵌入 iframe（高度可调）
+    st.markdown(f'<iframe src="{coze_url}" width="100%" height="600" style="border: 2px solid #1e5f7a; border-radius: 10px;"></iframe>', unsafe_allow_html=True)
+    
+    st.info("💡 提示：如果无法显示，请选择上方的“点击链接查看”方式。")
