@@ -3,7 +3,7 @@ import pandas as pd
 
 # 页面配置
 st.set_page_config(
-    page_title="极速出海 | AI赋能的报价履约协同助手",
+    page_title="极速出海 · 首页| AI赋能的报价履约协同助手",
     page_icon="🚢",
     layout="wide"
 )
