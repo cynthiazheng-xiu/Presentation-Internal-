@@ -27,11 +27,11 @@ with col2:
     st.markdown("""
     **贵州遵礼外贸有限公司**
     - 4名学生正在实习
-    - 合作开发报价模板
+    - 深入了解行业痛点
     
     **贵州一码进出口有限责任公司**
     - 已见面3次
-    - 正在洽谈实训基地
+    - 正在洽谈合作开发报价模板
     
     **产业价值**
     - 63.64%企业想要的本地产业带实战案例
@@ -43,7 +43,7 @@ st.markdown("""
 <div style="text-align: center; padding: 2rem; background: #f0f7fa; border-radius: 20px;">
     <h3 style="color: #1e5f7a;">指导老师承诺</h3>
     <p style="font-size: 1.2rem;">全程跟训 · 资源协调 · 心理疏导</p>
-    <p style="font-style: italic; margin-top: 1rem;">“我的底气不是来自项目本身，而是来自这群学生——他们用60分钟证明：AI+数字化，真的能让小微外贸‘极速出海’。”</p>
+    <p style="font-style: italic; margin-top: 1rem;">“项目用60分钟证明：AI+数字化，真的能让小微外贸‘极速出海’。”</p>
     <p>—— 郑秀英</p>
 </div>
 """, unsafe_allow_html=True)
