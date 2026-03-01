@@ -99,3 +99,39 @@ st.markdown("""
 - **🛠️ 四大模块**：各模块功能演示
 - **🤝 产教融合**：团队与企业合作
 """)
+# ===== 指导教师团队 =====
+st.markdown("---")
+st.subheader("👩‍🏫 指导教师团队")
+
+# 创建三列布局展示三位老师
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.image("https://via.placeholder.com/120/1e5f7a/ffffff?text=郑秀英", width=120)
+    st.markdown("""
+    **郑秀英** 讲师
+    - 四川大学国际贸易学士
+    - 10+年企业实战经验
+    - 🏆 省教育厅一等奖指导教师（2023跨境电子商务）
+    - 🏆 省教育厅一等奖指导教师（2021英语口语）
+    - 🏆 中国国际大学生创新大赛省赛银奖
+    """)
+
+with col2:
+    st.image("https://via.placeholder.com/120/4a6fa5/ffffff?text=秦安朋", width=120)
+    st.markdown("""
+    **秦安朋** 教师
+    - 课程团队核心成员
+    - 跨境电商教学专家
+    """)
+
+with col3:
+    st.image("https://via.placeholder.com/120/6a8fb5/ffffff?text=郑国桂", width=120)
+    st.markdown("""
+    **郑国桂** 教师
+    - 课程团队核心成员
+    - 商务英语教学专家
+    """)
+
+# 单独突出省教育厅获奖
+st.info("🏆 **团队荣誉**：近三年累计获得贵州省教育厅颁发的省级技能大赛奖项6项，其中一等奖2项，二等奖4项。")
